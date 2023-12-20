@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    text-align: center;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-7 {
+    gap: 7px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+body {
+    background-color: #11111D;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+
+/* header */
+
+nav {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+#logo {
+    font-family: 'Bruno Ace', sans-serif;
+}
+
+
+
+/* main */
+
+section {
+    position: relative;
+    padding: 37px;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: #24BB77;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+
+
+
+.outer{
+    margin: 46px auto 0;
+    width: fit-content;
+}
+
+.inner{
+    position: relative;
+    border: 15px solid rgba(255, 255, 255, 0.03);
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+    border-bottom: none;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.box {
+    width: 100%;
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
+    border: 1px rgba(255, 255, 255, 0.05) solid;
+    border-bottom: none;
+    padding: 0px 140px 20px;
+}
+
+.box-title {
+    color: #9699B1;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 28px;
+    margin-top: 50px;
+}
+
+.time-box {
+    width: fit-content;
+    margin: 0 auto;
+    border-top: 1px rgba(255, 255, 255, 0.05) solid;
+    padding: 16px 0;
+}
+
+.time-box .right {
+    padding: 10px 0 0 52px;
+    border-left: 1px rgba(255, 255, 255, 0.05) solid;
+}
+
+.time-box .left {
+    padding: 10px 52px 0 0;
+}
+
+.time-box .left,
+.time-box .right {
+    margin-bottom: 20px;
+}
+
+.time-box h1 {
+    font-size: 110px;
+    font-weight: 275;
+    line-height: 110px;
+}
+
+.time-box p {
+    color: #9699B1;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+circle{
+    fill: none;
+    stroke: #24BB77;
+    stroke-width: 15px;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    animation: anim 1s linear forwards;
+}
+
+svg{
+    width: calc(100% + 30px);
+    height: calc(200% + 60px);
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    transform: rotate(180deg);
+}
+
+@keyframes anim {
+    100%{
+        stroke-dashoffset: 760;
+    }
+}
+
+
+
+
+
+
+.weather {
+    position: relative;
+    border: 2px rgba(255, 255, 255, 0.05) solid;
+    width: 1200px;
+    margin: 0 auto;
+    z-index: 999;
+    background: #11111D;
+}
+
+.weather-title h3 {
+    margin: 11px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.day-box {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.day {
+    border-top: 2px rgba(255, 255, 255, 0.05) solid;
+    border-right: 2px rgba(255, 255, 255, 0.05) solid;
+    padding: 20px 0;
+}
+
+.day:last-child {
+    border-right: none;
+}
+
+.day p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px 0 11px 0;
+}
+
+.day span {
+    font-size: 32px;
+    font-weight: 275;
+}
